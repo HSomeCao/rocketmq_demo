@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.bank.pojo;
+package com.bank.common.pojo;
 
 /**
  * @author admin

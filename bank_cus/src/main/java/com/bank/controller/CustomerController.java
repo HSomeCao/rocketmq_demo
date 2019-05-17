@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.bank.common.Messages;
-import com.bank.pojo.Customer;
-import com.bank.service.CustomerService;
+import com.bank.common.info.Messages;
+import com.bank.common.pojo.Customer;
+import com.bank.common.service.CustomerService;
 
 @Controller
 @RequestMapping("/customer")

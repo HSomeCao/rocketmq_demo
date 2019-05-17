@@ -1,4 +1,4 @@
-package com.bank.common;
+package com.bank.common.info;
 
 public class Messages<T> {
 

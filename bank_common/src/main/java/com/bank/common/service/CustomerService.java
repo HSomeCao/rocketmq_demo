@@ -1,7 +1,8 @@
-package com.bank.service;
+package com.bank.common.service;
 
-import com.bank.common.Messages;
-import com.bank.pojo.Customer;
+
+import com.bank.common.info.Messages;
+import com.bank.common.pojo.Customer;
 
 public interface CustomerService {
 

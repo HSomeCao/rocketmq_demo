@@ -76,7 +76,7 @@
     <dubbo:protocol port="21880"/>
     
     <!-- 注册 -->
-    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <dubbo:registry address="zookeeper://127.0.0.1:2181" dynamic="true"/>
     <dubbo:config-center address="zookeeper://127.0.0.1:2181"/>
 <!--<dubbo:metadata-report address="zookeeper://127.0.0.1:2181"/> -->
 

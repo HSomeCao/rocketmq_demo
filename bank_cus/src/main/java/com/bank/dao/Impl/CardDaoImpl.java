@@ -12,7 +12,7 @@ import com.bank.common.Pagehelper;
 import com.bank.config.AppConfig;
 import com.bank.config.CidAuth;
 import com.bank.dao.CardDao;
-import com.bank.pojo.Card;
+import com.bank.common.pojo.Card;
 
 import vig.core.exception.VIGException;
 import vig.library.AbstractObject.AbstractDAO;

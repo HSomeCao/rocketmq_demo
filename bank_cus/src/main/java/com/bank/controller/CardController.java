@@ -8,10 +8,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.bank.common.Messages;
-import com.bank.pojo.Card;
-import com.bank.service.CardService;
-import com.bank.service.DepositService;
+import com.bank.common.info.Messages;
+import com.bank.common.pojo.Card;
+import com.bank.common.service.CardService;
+import com.bank.common.service.DepositService;
+
 
 @Controller
 @RequestMapping("/card")

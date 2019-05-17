@@ -9,10 +9,11 @@ import org.apache.commons.lang3.StringUtils;
 
 import com.bank.common.PageReturn;
 import com.bank.common.Pagehelper;
+import com.bank.common.pojo.Customer;
 import com.bank.config.AppConfig;
 import com.bank.config.CidAuth;
 import com.bank.dao.CustomerDao;
-import com.bank.pojo.Customer;
+
 
 import vig.core.exception.VIGException;
 import vig.library.AbstractObject.AbstractDAO;

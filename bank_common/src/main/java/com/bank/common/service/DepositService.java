@@ -1,4 +1,4 @@
-package com.bank.service;
+package com.bank.common.service;
 
 public interface DepositService {
 

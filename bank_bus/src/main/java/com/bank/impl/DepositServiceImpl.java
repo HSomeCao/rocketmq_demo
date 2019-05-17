@@ -1,8 +1,9 @@
-package com.bank.service.impl;
+package com.bank.impl;
 
 import org.apache.dubbo.config.annotation.Service;
 
-import com.bank.service.DepositService;
+import com.bank.common.service.DepositService;
+
 
 @Service
 public class DepositServiceImpl implements DepositService {

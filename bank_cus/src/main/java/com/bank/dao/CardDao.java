@@ -6,7 +6,7 @@ package com.bank.dao;
 import java.util.List;
 
 import com.bank.common.Pagehelper;
-import com.bank.pojo.Card;
+import com.bank.common.pojo.Card;
 
 /**
  * @author admin
