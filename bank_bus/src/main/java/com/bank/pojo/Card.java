@@ -3,12 +3,16 @@
  */
 package com.bank.pojo;
 
+import java.io.Serializable;
+
 /**
  * @author admin
  * 2019年4月26日
  * card 银行卡表
  */
-public class Card extends Base{
+public class Card extends Base implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 
 	public String id;	//银行卡id
 	public String code;	//卡号
