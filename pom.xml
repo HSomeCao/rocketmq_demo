@@ -10,6 +10,7 @@
 		<module>bank_bus</module>
 		<module>bank_cus</module>
 		<module>bank_common</module>
+		<module>bank_message</module>
 	</modules>
 	<!-- 用来设置版本号 -->
 	<properties>
@@ -25,6 +26,7 @@
 	</properties>
 	<!-- dubbo start -->
 	<dependencies>
+
 		<dependency>
 			<groupId>org.apache.dubbo</groupId>
 			<artifactId>dubbo</artifactId>
