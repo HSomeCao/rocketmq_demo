@@ -2,3 +2,4 @@
 /.project
 /.idea/
 /maven-dubbo-parent.iml
+/target/
