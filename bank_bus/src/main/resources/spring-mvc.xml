@@ -75,10 +75,10 @@
 	<dubbo:annotation package="com.bank.service.impl"/>
  
 	<bean id="depositServiceImpl"
-		class="com.bank.service.impl.DepositServiceImpl" />
+		class="com.bank.impl.DepositServiceImpl" />
 
 	<!-- declare the service interface to be exported -->
 	<dubbo:service
-		interface="com.bank.service.DepositService" ref="depositServiceImpl" dynamic="true"/>   
+		interface="com.bank.common.service.DepositService" ref="depositServiceImpl" dynamic="true"/>
 <!--     dubbo_end -->    
 </beans>    

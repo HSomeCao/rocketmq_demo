@@ -87,11 +87,11 @@
  	
  
     <!-- 暴露接口 -->
-    <dubbo:service interface="com.bank.service.CardService" ref="cardServiceImpl" dynamic="true"/>
-    <dubbo:service interface="com.bank.service.CustomerService" ref="customerServiceImpl" dynamic="true"/>
+    <dubbo:service interface="com.bank.common.service.CardService" ref="cardServiceImpl" dynamic="true"/>
+    <dubbo:service interface="com.bank.common.service.CustomerService" ref="customerServiceImpl" dynamic="true"/>
     
     <!--引用接口 -->
-    <dubbo:reference id="depositService" check="false" interface="com.bank.service.DepositService"/>
+    <dubbo:reference id="depositService" check="false" interface="com.bank.common.service.DepositService"/>
  <!--     dubbo__end -->
     
 </beans>    

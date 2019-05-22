@@ -10,6 +10,7 @@
 		<module>bank_bus</module>
 		<module>bank_cus</module>
 		<module>bank_common</module>
+		<module>bank_message</module>
 	</modules>
 	<!-- 用来设置版本号 -->
 	<properties>
@@ -23,22 +24,6 @@
 		<dubbo.version>2.7.1</dubbo.version>
 	
 	</properties>
-	<!-- dubbo start -->
-	<dependencies>
-		<dependency>
-			<groupId>org.apache.dubbo</groupId>
-			<artifactId>dubbo</artifactId>
-			<version>${dubbo.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.dubbo</groupId>
-			<artifactId>dubbo-dependencies-zookeeper</artifactId>
-			<version>${dubbo.version}</version>
-			<type>pom</type>
-		</dependency>
-		<!-- dubbo end -->
-	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
