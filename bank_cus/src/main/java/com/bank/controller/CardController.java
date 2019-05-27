@@ -18,10 +18,10 @@ import com.bank.common.service.DepositService;
 @RequestMapping("/card")
 public class CardController {
 
-	@Autowired
+	@Autowired(required=false)
 	private CardService cardService;
 
-	
+
 	@Reference 
 	private DepositService depositService;
 	 

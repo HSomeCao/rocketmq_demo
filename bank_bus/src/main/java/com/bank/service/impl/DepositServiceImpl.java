@@ -1,4 +1,4 @@
-package com.bank.impl;
+package com.bank.service.impl;
 
 import com.bank.common.pojo.Card;
 import org.apache.dubbo.config.annotation.Service;

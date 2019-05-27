@@ -1,4 +1,4 @@
-package com.bank.service.Impl;
+package com.bank.service.impl;
 
 import java.util.List;
 
@@ -6,7 +6,6 @@ import org.apache.dubbo.config.annotation.Service;
 
 import com.bank.common.info.Messages;
 import com.bank.common.pojo.Customer;
-import com.bank.common.service.CardService;
 import com.bank.common.service.CustomerService;
 import com.bank.config.AppConfig;
 import com.bank.dao.CustomerDao;

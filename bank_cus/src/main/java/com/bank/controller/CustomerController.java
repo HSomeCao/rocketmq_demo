@@ -15,7 +15,7 @@ import com.bank.common.service.CustomerService;
 @RequestMapping("/customer")
 public class CustomerController {
 
-	@Autowired
+	@Autowired(required = false)
 	private CustomerService customerService;
 
 	@RequestMapping("/add")

@@ -67,7 +67,7 @@
     
 <!--     dubbo__start -->
     
-    <dubbo:application name="cus-t">
+    <dubbo:application name="cus-t123">
     <dubbo:parameter key="qos.enable" value="true"/>
     <dubbo:parameter key="qos.accept.foreign.ip" value="true"/>
     <dubbo:parameter key="qos.port" value="33333"/>
@@ -82,13 +82,13 @@
 
 <!--service implementation, as same as regular local bean -->
 <!--<bean id="DepositService" class="com.bank.service.impl.DepositServiceImpl"/>-->
- 	<dubbo:annotation package="com.bank.service"/>
+ 	<dubbo:annotation package="com.bank.service.impl"/>
  	<dubbo:annotation package="com.bank.controller"/>
- 	
- 
-    <!-- 暴露接口 -->
+ 	<!-- 暴露接口 -->
+ 	<dubbo:annotation package="com.bank.service.impl"/>
+<!--    
     <dubbo:service interface="com.bank.common.service.CardService" ref="cardServiceImpl" dynamic="true"/>
-    <dubbo:service interface="com.bank.common.service.CustomerService" ref="customerServiceImpl" dynamic="true"/>
+    <dubbo:service interface="com.bank.common.service.CustomerService" ref="customerServiceImpl" dynamic="true"/> -->
     
     <!--引用接口 -->
     <dubbo:reference id="depositService" check="false" interface="com.bank.common.service.DepositService"/>

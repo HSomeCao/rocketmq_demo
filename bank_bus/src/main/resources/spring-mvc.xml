@@ -64,8 +64,11 @@
     
 <!--     dubbbo_start  -->
 	<!-- provider's application name, used for tracing dependency relationship -->
-	<dubbo:application name="bus-t8" />
-	<dubbo:protocol port="20891" />
+	<dubbo:application name="bus-t123" />
+<!--	<dubbo:protocol port="20891" />-->
+<dubbo:protocol name="dubbo" port="20880" />
+<!--     <dubbo:protocol name="dubbo" threads="500" contextpath="v1" server="tomcat" accepts="500"/>
+ -->  <!--   <dubbo:protocol name="dubbo"/> -->
 	<dubbo:registry address="zookeeper://127.0.0.1:2181" dynamic="true" />
 	<dubbo:config-center address="zookeeper://127.0.0.1:2181" />
 	<!-- <dubbo:config-center address="zookeeper://127.0.0.1:2181"/> <dubbo:metadata-report 
@@ -73,12 +76,9 @@
 	<!-- service implementation, as same as regular local bean -->
 	
 	<dubbo:annotation package="com.bank.service.impl"/>
- 
-	<bean id="depositServiceImpl"
-		class="com.bank.impl.DepositServiceImpl" />
 
 	<!-- declare the service interface to be exported -->
-	<dubbo:service
-		interface="com.bank.common.service.DepositService" ref="depositServiceImpl" dynamic="true"/>
+<!--	<dubbo:service
+		interface="com.bank.common.service.DepositService" ref="depositServiceImpl" dynamic="true"/>-->
 <!--     dubbo_end -->    
 </beans>    

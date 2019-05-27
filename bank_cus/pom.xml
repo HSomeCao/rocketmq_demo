@@ -275,10 +275,14 @@
             <version>${dubbo.version}</version>
             <type>pom</type>
         </dependency>
+         <dependency>
+             <groupId>org.apache.rocketmq</groupId>
+             <artifactId>rocketmq-client</artifactId>
+             <version>4.5.0</version>
+         </dependency>
 
 
-		
-    </dependencies>    
+    </dependencies>
     
      <build>
     <finalName>cus</finalName>
