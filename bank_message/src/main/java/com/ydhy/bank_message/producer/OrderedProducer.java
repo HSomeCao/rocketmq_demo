@@ -1,8 +1,7 @@
-package com.ydhy.bank_message.mq;
+package com.ydhy.bank_message.producer;
 
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
-import org.apache.rocketmq.client.producer.MQProducer;
 import org.apache.rocketmq.client.producer.MessageQueueSelector;
 import org.apache.rocketmq.client.producer.SendResult;
 import org.apache.rocketmq.common.message.Message;

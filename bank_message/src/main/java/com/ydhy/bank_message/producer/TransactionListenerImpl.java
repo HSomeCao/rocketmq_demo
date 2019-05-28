@@ -1,4 +1,4 @@
-package com.ydhy.bank_message.mq;
+package com.ydhy.bank_message.producer;
 
 import org.apache.rocketmq.client.producer.LocalTransactionState;
 import org.apache.rocketmq.client.producer.TransactionListener;
@@ -28,17 +28,16 @@ public class TransactionListenerImpl implements TransactionListener {
     @Override
     public LocalTransactionState checkLocalTransaction(MessageExt msg) {
         Integer status = localTrans.get(msg.getTransactionId());
-        System.out.println(5555);
         if (null != status) {
             switch (status) {
                 case 0:
-                    System.out.println(2222);
+                    System.out.println("LocalTransactionState.UNKNOW");
                     return LocalTransactionState.UNKNOW;
                 case 1:
-                    System.out.println(3222);
+                    System.out.println("LocalTransactionState.COMMIT_MESSAGE");
                     return LocalTransactionState.COMMIT_MESSAGE;
                 case 2:
-                    System.out.println(4444);
+                    System.out.println("LocalTransactionState.ROLLBACK_MESSAGE");
                     return LocalTransactionState.ROLLBACK_MESSAGE;
             }
         }

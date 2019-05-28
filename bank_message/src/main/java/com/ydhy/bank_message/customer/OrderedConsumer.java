@@ -1,4 +1,4 @@
-package com.ydhy.bank_message.mqcus;
+package com.ydhy.bank_message.customer;
 
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.ConsumeOrderlyContext;
