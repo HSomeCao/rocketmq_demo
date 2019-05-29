@@ -1,5 +1,6 @@
 package com.bank.service.impl;
 
+import com.bank.common.info.Messages;
 import com.bank.common.pojo.Card;
 import org.apache.dubbo.config.annotation.Service;
 
@@ -31,7 +32,7 @@ public class DepositServiceImpl implements DepositService {
 	}
 
 	@Override
-	public Card getObjectTest() {
+	public Messages getObjectTest() {
 		// TODO Auto-generated method stub
 
 		Card a=new Card();
@@ -81,7 +82,7 @@ public class DepositServiceImpl implements DepositService {
 
 
 
-		return a;
+		return new Messages(true,"返回json对象",a);
 	}
 
 }
