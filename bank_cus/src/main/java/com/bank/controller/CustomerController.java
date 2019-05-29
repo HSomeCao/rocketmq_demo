@@ -20,6 +20,7 @@ public class CustomerController {
 
 	@RequestMapping("/add")
 	@ResponseBody
+
 	public Messages open(@RequestBody Customer customer) {
 		if (StringUtils.isBlank(customer.id_code) || StringUtils.isBlank(customer.idtype_id)
 				|| StringUtils.isBlank(customer.name) || StringUtils.isBlank(customer.phone)) {
