@@ -5,9 +5,8 @@ import com.bank.common.mqservice.ProducerSer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.support.MessageBuilder;
-import org.springframework.stereotype.Service;
+import org.apache.dubbo.config.annotation.Service;
 
 import javax.annotation.Resource;
 import java.io.Serializable;

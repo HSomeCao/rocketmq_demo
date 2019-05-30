@@ -13,6 +13,7 @@
 		<module>bank_message</module>
 	</modules>
 	<!-- 用来设置版本号 -->
+	<!-- 注意！message模块为spring boot ，并没有引用此版本，若修改以下版本请务必到message模块下对应位置修改 -->
 	<properties>
 		<srping.version>4.2.5.RELEASE</srping.version>
 		<mybatis.version>3.2.8</mybatis.version>
