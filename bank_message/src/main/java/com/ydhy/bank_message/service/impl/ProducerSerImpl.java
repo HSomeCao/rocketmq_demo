@@ -2,6 +2,7 @@ package com.ydhy.bank_message.service.impl;
 
 import com.bank.common.info.MQResult;
 import com.bank.common.mqservice.ProducerSer;
+import com.ydhy.bank_message.domain.OrderPaidEvent;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
@@ -59,11 +60,4 @@ public class ProducerSerImpl implements ProducerSer {
         return null;
     }
 
-    @Data
-    @AllArgsConstructor
-    public class OrderPaidEvent implements Serializable {
-        private String orderId;
-
-        private BigDecimal paidMoney;
-    }
 }
