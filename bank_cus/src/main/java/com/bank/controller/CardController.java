@@ -64,5 +64,15 @@ public class CardController {
 		  System.out.println("cus_testcus_调用bus的test_返回值："+test); return test;
 		 
 	}
+	
+	@RequestMapping("/get/object")
+	@ResponseBody
+	public Messages getobject() {
+		//cardService.add(null);
+		//return "sdaf";
+		
+		 return depositService.getObjectTest();
+		 
+	}
 
 }

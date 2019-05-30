@@ -1,6 +1,10 @@
 package com.bank.common.info;
 
-public class Messages<T> {
+import java.io.Serializable;
+
+public class Messages<T>implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 
 	private Boolean result;
 
