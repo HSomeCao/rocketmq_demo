@@ -70,7 +70,7 @@ public class CardController {
 	public Messages getobject() {
 		//cardService.add(null);
 		//return "sdaf";
-		
+		System.out.println("8888888");
 		 return depositService.getObjectTest();
 		 
 	}
