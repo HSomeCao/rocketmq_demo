@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 /**
  * Created by caoliangwei on  2019/5/27 16:27
  */
-@Service
+
 public class ProducerSerImpl implements ProducerSer {
 
     @Resource

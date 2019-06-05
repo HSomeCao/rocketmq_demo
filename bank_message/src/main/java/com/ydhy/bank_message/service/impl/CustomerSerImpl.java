@@ -8,7 +8,7 @@ import org.apache.dubbo.config.annotation.Service;
 /**
  * Created by caoliangwei on  2019/5/27 16:27
  */
-@Service
+
 public class CustomerSerImpl implements CustomerSer {
     @Override
     public MQResult BroadcastConsumer() {

@@ -10,5 +10,5 @@ dubbo:
   protocol:
     port: 12345
     name: dubbo
-  scan:
-    base-packages: com.ydhy.bank_message.service.impl
+  #scan:
+    #base-packages: com.ydhy.bank_message.service.impl
