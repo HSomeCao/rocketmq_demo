@@ -7,8 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>bank_bus</module>
-		<module>bank_cus</module>
+
 		<module>bank_common</module>
 		<module>bank_message</module>
 	</modules>
